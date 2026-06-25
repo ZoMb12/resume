@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>袁礼杰 - 个人简历</title>
+  <style>
+    :root {
+      --primary: #1a1a2e;
+      --accent: #0f3460;
+      --highlight: #e94560;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+      --text: #2d3436;
+      --muted: #636e72;
+      --border: #dfe6e9;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 50px 60px;
+    }
+    .header { text-align: center; padding-bottom: 30px; border-bottom: 3px solid var(--highlight); margin-bottom: 30px; }
+    .header h1 { font-size: 36px; color: var(--primary); letter-spacing: 4px; margin-bottom: 10px; }
+    .header .meta { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; color: var(--muted); font-size: 15px; }
+    .header .meta a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+    .header .meta a:hover { color: var(--highlight); }
+    .section { margin-bottom: 28px; }
+    .section-title { font-size: 18px; font-weight: 700; color: var(--primary); padding-left: 14px; border-left: 4px solid var(--highlight); margin-bottom: 14px; line-height: 1.4; }
+    .edu-row { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 4px; }
+    .edu-row .school { font-size: 16px; font-weight: 600; color: var(--primary); }
+    .edu-row .date { font-size: 14px; color: var(--muted); }
+    .courses { font-size: 14px; color: var(--muted); margin-top: 4px; }
+    .skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+    .skill-item { font-size: 14px; line-height: 1.6; padding: 4px 0; }
+    .skill-item strong { color: var(--accent); }
+    .exp-item { margin-bottom: 20px; }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 4px; }
+    .exp-header .title { font-size: 16px; font-weight: 600; color: var(--primary); }
+    .exp-header .sub { font-size: 14px; color: var(--accent); }
+    .exp-header .date { font-size: 14px; color: var(--muted); }
+    .exp-header .github-link { font-size: 13px; color: var(--accent); text-decoration: none; }
+    .exp-header .github-link:hover { color: var(--highlight); text-decoration: underline; }
+    .exp-desc { font-size: 13px; color: var(--muted); margin: 2px 0 6px 0; }
+    .exp-item ul { list-style: none; padding: 0; }
+    .exp-item ul li { font-size: 14px; padding: 3px 0 3px 16px; position: relative; line-height: 1.6; }
+    .exp-item ul li::before { content: ""; position: absolute; left: 0; top: 12px; width: 7px; height: 7px; background: var(--highlight); border-radius: 50%; opacity: 0.6; }
+    .achieve-list { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; }
+    .achieve-list-col { grid-template-columns: 1fr; }
+    .achieve-item { font-size: 14px; padding: 3px 0 3px 16px; position: relative; line-height: 1.6; }
+    .achieve-item::before { content: ""; position: absolute; left: 0; top: 12px; width: 7px; height: 7px; background: var(--accent); border-radius: 50%; opacity: 0.4; }
+    .evaluation { font-size: 14px; line-height: 1.8; color: var(--text); padding: 16px 20px; background: var(--bg); border-radius: 8px; border-left: 4px solid var(--accent); }
+    @media print { body { padding: 0; background: white; } .container { box-shadow: none; padding: 30px 40px; border-radius: 0; } .header { margin-bottom: 20px; } .section { margin-bottom: 20px; } }
+    @media (max-width: 600px) { .container { padding: 24px 20px; } .skill-grid, .achieve-list { grid-template-columns: 1fr; } .header .meta { flex-direction: column; gap: 6px; } }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>袁礼杰</h1>
+    <div class="meta">
+      <span>📞 17717021589</span>
+      <span>⏱ 5个工作日内到岗</span>
+      <a href="https://github.com/ZoMb12" target="_blank">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="vertical-align:-2px;margin-right:2px"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub: ZoMb12
+      </a>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">🎓 教育背景</div>
+    <div class="edu-row">
+      <span class="school">上海海事大学 · 电子信息工程</span>
+      <span class="date">本科 · 预计 2027年6月 毕业</span>
+    </div>
+    
+  </div>
+  <div class="section">
+    <div class="section-title">🛠 专业技能</div>
+    <div class="skill-grid">
+      <div class="skill-item"><strong>AI 编程工具</strong><br>深度使用 Claude Code 配合 Codex 进行任务拆解与代码生成，熟悉 Cursor 等 AI 编程工具，掌握 Harness 使用与调优</div>
+      <div class="skill-item"><strong>Web 开发</strong><br>了解 HTML / CSS / JavaScript / React / Next.js 基础，能独立搭建页面与轻量级 Web 工具<br>具备基础的 Node.js 开发与项目调试能力</div>
+      <div class="skill-item"><strong>自动化工作流</strong><br>了解 n8n / Make / Zapier 等自动化工具，能搭建 API 驱动的自动化工作流<br>熟悉 Webhook、数据同步、表单系统与通知自动化的设计与实现</div>
+      <div class="skill-item"><strong>编程语言</strong><br>C 语言 / Python，具备嵌入式开发与调试经验</div>
+      <div class="skill-item"><strong>英语与北美市场</strong><br>CET-4，可流畅阅读英文技术文档与社区内容<br>了解北美社交媒体生态（TikTok / Instagram / Discord / Reddit），熟悉海外校园文化与 Meme 文化</div>
+      <div class="skill-item"><strong>操作系统</strong><br>熟悉 Linux 操作系统，具备基本的系统管理与 Shell 脚本使用经验</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">🚀 项目经历</div>
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="title">CS饰品搬砖选品助手</span>
+        <span class="sub">Python / Streamlit / Playwright / SQLite / Plotly</span>
+        <a class="github-link" href="https://github.com/ZoMb12/cs-item-arbitrage" target="_blank">cs-item-arbitrage ↗</a>
+      </div>
+      <div class="exp-desc">CS:GO/CS2 饰品搬砖选品工具，实现 BUFF → Steam 跨平台套利</div>
+      <ul>
+          <li>设计 4 阶段流水线架构：BUFF 筛选 → 价格稳定性分析 → Steam 市场数据获取 → 套利对比</li>
+          <li>实现 Playwright 浏览器自动化，完成 Steam 市场数据自动采集与变体匹配</li>
+          <li>使用滑动窗口算法分析价格波动趋势，筛选波动在阈值内的稳定饰品</li>
+          <li>开发交互式 Streamlit Web 界面，支持一键执行与分步独立重跑</li>
+          <li>结果持久化至本地 SQLite 数据库，Plotly 交互式价格走势图表</li>
+      </ul>
+    </div>
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="title">搬砖报表</span>
+        <span class="sub">Python / Streamlit / Playwright / pandas / openpyxl / Plotly</span>
+        <a class="github-link" href="https://github.com/ZoMb12/banzhuan-report" target="_blank">banzhuan-report ↗</a>
+      </div>
+      <div class="exp-desc">CS 饰品搬砖选品报表工具，BUFF 市场抓取 → 滑动窗口扫描 → Steam 比价 → Excel 导出</div>
+      <ul>
+          <li>实现 24 天滑动窗口逐日扫描算法，精细筛选价格稳定的目标饰品</li>
+          <li>自动化 Steam 市场比价，BUFF 与 Steam 价格按日期配对计算均价差</li>
+          <li>支持多品类（匕首、手套、步枪等）同时抓取，按品类独立配额</li>
+          <li>利润筛选后直接导出 Excel 目标清单，配合代理自动切换实现大陆网络访问</li>
+      </ul>
+    </div>
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="title">跨境电商独立站模块化搭建探索</span>
+        <span class="sub">TypeScript / Next.js / React</span>
+        <a class="github-link" href="https://github.com/ZoMb12/ZoMble-Challenge" target="_blank">ZoMble-Challenge ↗</a>
+      </div>
+      <div class="exp-desc">跨境电商独立站的模块化自动搭建探索 — 针对情趣内衣 & Cosplay 垂直品类的建站方案</div>
+      <ul>
+          <li>探索跨境电商独立站的组件化、模块化自动搭建方案，减少重复建站成本</li>
+          <li>基于 Next.js 框架，研究品类模板的可复用架构与自动化部署流程</li>
+          <li>实践面向海外市场的垂直品类前端技术方案</li>
+      </ul>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">🌟 实践经历</div>
+    <div class="achieve-list achieve-list-col">
+      <div class="achieve-item">大型活动运营与组织 — 中国国际进口博览会（CIIE）现场引导与突发事件协调，上海马拉松后勤保障，累计服务数万人次；校青志成员，长期参与校园活动组织与执行</div>
+      <div class="achieve-item">校青年志愿者组织（青志）成员 — 深度参与学校志愿者工作，长期投身校园公益与大型活动的志愿服务组织与执行</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">📝 自我评价</div>
+    <div class="evaluation">
+      电子信息工程专业在读。积极探索 AI 技术在工程实践中的应用。具备独立开发能力，在 CS饰品搬砖选品助手、搬砖报表、跨境电商独立站模块化搭建探索 等项目中展现了全栈工程思维。责任心强，适应快节奏技术环境，善于在实践中快速学习与成长。对 AI 应用开发、自动化工具搭建与增长运营有强烈的探索热情，渴望在实践中快速成长，为团队创造实际价值。
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
